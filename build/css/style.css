@@ -1545,6 +1545,229 @@ button,
   max-width: 155px;
 }
 
+.feedback {
+  color: #ffffff;
+  min-height: 670px;
+  padding: 90px 40px;
+  background: #00b2ff;
+}
+
+.feedback h2 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-top: 0px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-left: -4px;
+  margin-bottom: 14px;
+}
+
+.feedback p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "PT Mono", "Courier New", monospace;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 1230px;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.feedback__wrapper::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -150px;
+  right: 58%;
+  width: 686px;
+  height: 764px;
+  background: url("../img/feedback-triangles.svg") no-repeat;
+  background-size: cover;
+}
+
+.feedback img {
+  padding-top: 70px;
+}
+
+.feedback__form {
+  margin-left: auto;
+  max-width: 570px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.feedback input {
+  height: 50px;
+  margin-bottom: 39px;
+}
+
+.feedback input[type="tel"] {
+  width: 47%;
+}
+
+.feedback input[type="text"] {
+  width: 47.37%;
+  margin-right: 21px;
+}
+
+.feedback input,
+.feedback textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  color: #ffffff;
+  margin-bottom: 39px;
+  padding: 12px 16px 17px;
+  font-weight: 400;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0;
+}
+
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::-moz-placeholder,
+.feedback textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.feedback input:-ms-input-placeholder,
+.feedback textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::-ms-input-placeholder,
+.feedback textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.feedback input::placeholder,
+.feedback textarea::placeholder {
+  color: #ffffff;
+}
+
+.feedback input:hover,
+.feedback input:focus,
+.feedback textarea:hover,
+.feedback textarea:focus {
+  outline: 2px solid #ffffff;
+}
+
+.feedback textarea {
+  min-height: 154px;
+  width: 100%;
+  margin-bottom: 31px;
+  resize: none;
+}
+
+.feedback [type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 0 0 40px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.feedback [type="checkbox"] + label:hover,
+.feedback [type="checkbox"] + label:focus {
+  text-decoration: underline;
+}
+
+.feedback [type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+}
+
+.feedback [type="checkbox"]:focus + label::before {
+  outline: 2px solid #ffffff;
+}
+
+.feedback [type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 8px;
+  height: 5px;
+  background: url("../img/check.svg") center no-repeat transparent;
+}
+
+.feedback__submit button {
+  position: relative;
+  min-width: 402px;
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: .05em;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.feedback__submit button:hover {
+  background: #ffffff;
+  color: #00b2ff;
+  border: 1px solid transparent;
+}
+
+.feedback__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.feedback__submit button {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1584,6 +1807,14 @@ button,
 
   .development__item--company {
     margin-right: 70px;
+  }
+
+  .feedback input[type="tel"] {
+    width: 100%;
+  }
+
+  .feedback input[type="text"] {
+    width: 100%;
   }
 }
 
@@ -1914,6 +2145,63 @@ button,
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+  }
+
+  .feedback {
+    padding-top: 80px;
+    background: none;
+    background-color: #00b2ff;
+    padding-bottom: 103px;
+    min-height: 664px;
+  }
+
+  .feedback h2 {
+    margin-bottom: 18px;
+  }
+
+  .feedback p {
+    margin-bottom: 56px;
+  }
+
+  .feedback__wrapper::before {
+    display: none;
+  }
+
+  .feedback__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 27px;
+    max-width: none;
+    padding-right: 22px;
+  }
+
+  .feedback img {
+    display: none;
+  }
+
+  .feedback__form {
+    margin: 0 auto;
+    max-width: none;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .feedback input,
+  .feedback textarea {
+    margin-bottom: 44px;
+  }
+
+  .feedback textarea {
+    min-height: 159px;
+  }
+
+  .feedback__submit button {
+    min-width: 281px;
+    margin-right: 40px;
+  }
+
+  .feedback__submit {
+    margin-top: 3px;
   }
 }
 
@@ -2266,6 +2554,59 @@ button,
   .services span {
     top: 19px;
     left: 35px;
+  }
+
+  .feedback {
+    padding: 30px 0 40px 0;
+    min-height: 640px;
+  }
+
+  .feedback h2 {
+    margin-bottom: 15px;
+    margin-left: -1px;
+  }
+
+  .feedback p {
+    line-height: 21.5px;
+    margin-bottom: 25px;
+  }
+
+  .feedback__wrapper {
+    padding: 0 16px;
+    display: block;
+  }
+
+  .feedback__form {
+    padding: 0;
+    margin: 0;
+  }
+
+  .feedback input,
+  .feedback textarea {
+    margin-bottom: 34px;
+  }
+
+  .feedback textarea {
+    min-height: 104px;
+    margin-bottom: 32px;
+  }
+
+  .feedback [type="checkbox"] + label {
+    padding-left: 33px;
+  }
+
+  .feedback__submit button {
+    margin-right: 0;
+    margin-bottom: 30px;
+    min-width: 288px;
+  }
+
+  .feedback__submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -2px;
   }
 }
 
