@@ -3,10 +3,6 @@
   letter-spacing: 0.04em;
 }
 
-.development__wrapper {
-
-}
-
 .development ul {
   display: flex;
   flex-wrap: wrap;
@@ -62,12 +58,12 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding-top: 14px;
+  padding-top: 0;
   padding-bottom: 14px;
   padding-right: 26px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 19px;
+    padding-top: 8px;
   }
 
   @media (max-width: $mobile-width) {
@@ -78,6 +74,7 @@
   }
 }
 
-.development__link {
+.development a {
   min-width: 192px;
+  margin-top: 13px;
 }

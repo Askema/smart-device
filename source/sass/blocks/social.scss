@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 18px 0 25px 0;
+    padding: 16px 0 25px 0;
     position: relative;
 
     &::before {
@@ -49,6 +49,7 @@
   a {
     display: flex;
     flex-direction: row;
+
     @media (max-width: $mobile-width) {
       margin-right: 14px;
     }
@@ -82,7 +83,7 @@
 .social ul {
   display: flex;
   margin-bottom: 41px;
-  margin-top: 45px;
+  margin-top: 51px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 0;

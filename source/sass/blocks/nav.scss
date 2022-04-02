@@ -30,10 +30,10 @@
   margin-left: 89px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 36px;
+    margin-left: 34px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     margin-left: 23px;
   }
 }

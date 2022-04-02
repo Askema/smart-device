@@ -23,8 +23,8 @@ accordions.forEach(function (accordion) {
     if (list.classList.contains('footer__list--opened')) {
       list.classList.remove('footer__list--opened');
     } else {
-      accordionLists.forEach(function (list) {
-        list.classList.remove('footer__list--opened');
+      accordionLists.forEach(function (element) {
+        element.classList.remove('footer__list--opened');
       });
       list.classList.add('footer__list--opened');
     }

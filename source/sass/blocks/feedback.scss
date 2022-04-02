@@ -22,16 +22,20 @@
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
-  margin-top: 0px;
+  margin-top: 0;
   font-family: $ff-roboto;
   margin-left: -4px;
   margin-bottom: 14px;
 
   @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 45px;
     margin-bottom: 18px;
   }
 
   @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39.38px;
     margin-bottom: 15px;
     margin-left: -1px;
   }
@@ -125,11 +129,16 @@
 .feedback input {
   height: 50px;
   margin-bottom: 39px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .feedback input[type="tel"] {
   width: 47%;
-  @media(max-width: $desktop-width) {
+
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -137,7 +146,8 @@
 .feedback input[type="text"] {
   width: 47.37%;
   margin-right: 21px;
-  @media(max-width: $desktop-width) {
+
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -156,11 +166,7 @@
   border-radius: 0;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 44px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-bottom: 34px;
+    margin-bottom: 39px;
   }
 
   &::placeholder {
@@ -185,7 +191,7 @@
 
   @media (max-width: $mobile-width) {
     min-height: 104px;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
   }
 }
 
@@ -220,6 +226,11 @@
   width: 16px;
   height: 16px;
   border: 1px solid $color-default-white;
+
+  @media (max-width: $mobile-width) {
+    top: 2px;
+    left: -1px;
+  }
 }
 
 .feedback [type="checkbox"]:focus + label::before {
@@ -234,16 +245,21 @@
   width: 8px;
   height: 5px;
   background: url("../img/check.svg") center no-repeat transparent;
+
+  @media (max-width: $mobile-width) {
+    top: 7px;
+    left: 3px;
+  }
 }
 
 .feedback__submit button {
   position: relative;
-  min-width: 402px;
+  min-width: 270px;
   display: block;
   font-family: $ff-roboto;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: $color-default-white;
   background-color: transparent;
   border: 1px solid $color-default-white;
@@ -253,6 +269,7 @@
   font-weight: 700;
   cursor: pointer;
   margin-right: 30px;
+  flex-grow: 1;
 
   &:hover {
     background: $color-default-white;
@@ -262,7 +279,7 @@
 
   @media (max-width: $tablet-width) {
     min-width: 281px;
-    margin-right: 40px;
+    margin-right: 31px;
   }
 
   @media (max-width: $mobile-width) {
@@ -287,8 +304,3 @@
     margin-top: -2px;
   }
 }
-
-.feedback__submit button {
-  flex-grow: 1;
-}
-

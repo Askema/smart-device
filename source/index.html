@@ -106,7 +106,7 @@
       </ul>
     </div>
   </section>
-  <section class="about container">
+  <section class="about">
     <div class="about__wrapper">
       <h2>О компании</h2>
       <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
@@ -120,15 +120,23 @@
   </section>
   <section class="services">
     <div class="services__wrapper">
-      <h2 class="title">Service Device предлагает следующие товары и услуги</h2>
+      <h2>Service Device предлагает следующие товары и услуги</h2>
       <div class="services__group">
         <a href="#">
           <picture>
             <source type="image/webp"
-                    srcset="img/services1.webp 1x, img/services1@2x.webp 2x">
+                    srcset="img/services1.webp, img/services1@2x.webp 2x"
+                    media="(max-width: 767px)">
+            <!-- 1x: 370px; 2x: 740px -->
+            <source type="image/webp"
+                    srcset="img/services1-tablet.webp, img/services1-tablet@2x.webp 2x"
+                    media="(max-width: 1023px)">
+            <!-- 1x: 715px; 2x: 1430px -->
+            <source type="image/webp"
+                    srcset="img/services1.webp, img/services1@2x.webp 2x">
             <!-- 1x: 370px; 2x: 740px -->
             <img src="img/services1.png" width="370" height="620"
-                 alt="Производство печатных плат">
+                    alt="Производство печатных плат">
           </picture>
           <span>Производство печатных плат</span>
         </a>
@@ -167,8 +175,7 @@
           <label class="visually-hidden" for="name">Имя</label>
           <input type="text" name="name" id="name" placeholder="Имя" required="">
           <label class="visually-hidden" for="tel">Телефон</label>
-          <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel" id="tel"
-                 placeholder="Телефон" required="">
+          <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel" id="tel" placeholder="Телефон" required>
           <label class="visually-hidden" for="textarea">Ваш вопрос</label>
           <textarea name="textarea" id="textarea" placeholder="Ваш вопрос" required=""></textarea>
           <div class="feedback__submit">
@@ -271,8 +278,7 @@
     <label class="visually-hidden" for="name-modal">Имя</label>
     <input type="text" name="name-modal" id="name-modal" placeholder="Имя" required="">
     <label class="visually-hidden" for="tel-modal">Телефон</label>
-    <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel-modal" id="tel-modal"
-           placeholder="Телефон" required="">
+    <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel-modal" id="tel-modal" placeholder="Телефон" required="">
     <label class="visually-hidden" for="textarea-modal">Ваш вопрос</label>
     <textarea name="textarea-modal" id="textarea-modal" placeholder="Ваш вопрос" required=""></textarea>
     <div class="modal__submit">

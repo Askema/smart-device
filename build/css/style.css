@@ -692,7 +692,8 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.9px;
 }
 
 .logo-text {
@@ -1168,7 +1169,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #203c42;
   margin-bottom: 25px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .footer ul {
@@ -1242,7 +1243,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 41px;
-  margin-top: 45px;
+  margin-top: 51px;
 }
 
 .social p {
@@ -1293,13 +1294,14 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  padding-top: 14px;
+  padding-top: 0;
   padding-bottom: 14px;
   padding-right: 26px;
 }
 
-.development__link {
+.development a {
   min-width: 192px;
+  margin-top: 13px;
 }
 
 .features {
@@ -1309,7 +1311,7 @@ button,
 }
 
 .features__wrapper {
-  padding-top: 112px;
+  padding-top: 94px;
   max-width: 1200px;
   margin: 0 auto;
   z-index: 1;
@@ -1329,8 +1331,8 @@ button,
 }
 
 .features li {
+  min-height: 232px;
   padding: 48px 42px 49px 42px;
-  min-height: 300px;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   width: calc(50% - 15px);
@@ -1383,7 +1385,7 @@ button,
 }
 
 .about {
-  padding-top: 74px;
+  padding-top: 60px;
   padding-bottom: 99px;
   color: #666666;
   z-index: 1;
@@ -1410,6 +1412,7 @@ button,
   margin: 0;
   max-width: 984px;
   margin-bottom: 22px;
+  padding-left: 2px;
 }
 
 .about p:last-of-type {
@@ -1465,6 +1468,10 @@ button,
 }
 
 .services h2 {
+  font-size: 36px;
+  line-height: 50.63px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 54px;
 }
@@ -1725,7 +1732,7 @@ button,
 
 .feedback__submit button {
   position: relative;
-  min-width: 402px;
+  min-width: 270px;
   display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -1808,14 +1815,6 @@ button,
   .development__item--company {
     margin-right: 70px;
   }
-
-  .feedback input[type="tel"] {
-    width: 100%;
-  }
-
-  .feedback input[type="text"] {
-    width: 100%;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -1823,13 +1822,8 @@ button,
     padding: 0 25px;
   }
 
-  .logo svg {
-    height: 38px;
-    width: 38px;
-  }
-
   .header {
-    padding-top: 20px;
+    padding-top: 17px;
     padding-bottom: 163px;
   }
 
@@ -1890,11 +1884,7 @@ button,
   }
 
   .nav li {
-    margin-left: 36px;
-  }
-
-  .nav li {
-    margin-left: 23px;
+    margin-left: 34px;
   }
 
   .nav__list svg {
@@ -1951,7 +1941,7 @@ button,
   .footer__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 
   .footer h2 {
@@ -1983,7 +1973,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    padding: 18px 0 25px 0;
+    padding: 16px 0 25px 0;
     position: relative;
   }
 
@@ -2022,7 +2012,7 @@ button,
   }
 
   .development__wrapper {
-    padding-top: 19px;
+    padding-top: 8px;
   }
 
   .features {
@@ -2031,11 +2021,11 @@ button,
   }
 
   .features__wrapper {
-    padding-top: 55px;
+    padding-top: 36px;
   }
 
   .features li {
-    padding: 22px 28px 22px 25px;
+    padding: 21px 20px 20px 25px;
     margin-bottom: 29px;
   }
 
@@ -2055,11 +2045,11 @@ button,
 
   .features p {
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
   .about {
-    padding-top: 57px;
+    padding-top: 45px;
     padding-bottom: 72px;
   }
 
@@ -2101,10 +2091,12 @@ button,
 
   .services {
     padding-top: 50px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
 
   .services h2 {
+    font-size: 32px;
+    line-height: 45px;
     margin-bottom: 50px;
     max-width: 613px;
   }
@@ -2129,7 +2121,7 @@ button,
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     overflow: hidden;
   }
 
@@ -2147,6 +2139,15 @@ button,
     width: 100%;
   }
 
+  .services img:first-of-type {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
   .feedback {
     padding-top: 80px;
     background: none;
@@ -2156,6 +2157,8 @@ button,
   }
 
   .feedback h2 {
+    font-size: 32px;
+    line-height: 45px;
     margin-bottom: 18px;
   }
 
@@ -2188,7 +2191,7 @@ button,
 
   .feedback input,
   .feedback textarea {
-    margin-bottom: 44px;
+    margin-bottom: 39px;
   }
 
   .feedback textarea {
@@ -2197,7 +2200,7 @@ button,
 
   .feedback__submit button {
     min-width: 281px;
-    margin-right: 40px;
+    margin-right: 31px;
   }
 
   .feedback__submit {
@@ -2208,6 +2211,11 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
+  }
+
+  .logo svg {
+    height: 38px;
+    width: 38px;
   }
 
   .logo p {
@@ -2269,6 +2277,10 @@ button,
 
   .nav {
     margin-bottom: 0;
+  }
+
+  .nav li {
+    margin-left: 23px;
   }
 
   .nav__logo--desktop {
@@ -2461,7 +2473,7 @@ button,
   }
 
   .features__wrapper {
-    padding-top: 36px;
+    padding-top: 18px;
   }
 
   .features li {
@@ -2492,7 +2504,7 @@ button,
   }
 
   .features svg {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .features h2 {
@@ -2505,7 +2517,7 @@ button,
   }
 
   .about {
-    padding: 31px 10px 53px 15px;
+    padding: 17px 10px 53px 15px;
   }
 
   .about h2 {
@@ -2538,6 +2550,8 @@ button,
   }
 
   .services h2 {
+    font-size: 28px;
+    line-height: 39.38px;
     margin-bottom: 44px;
     padding-left: 10px;
   }
@@ -2562,6 +2576,8 @@ button,
   }
 
   .feedback h2 {
+    font-size: 28px;
+    line-height: 39.38px;
     margin-bottom: 15px;
     margin-left: -1px;
   }
@@ -2581,18 +2597,35 @@ button,
     margin: 0;
   }
 
-  .feedback input,
-  .feedback textarea {
-    margin-bottom: 34px;
+  .feedback input {
+    margin-bottom: 31px;
+  }
+
+  .feedback input[type="tel"] {
+    width: 100%;
+  }
+
+  .feedback input[type="text"] {
+    width: 100%;
   }
 
   .feedback textarea {
     min-height: 104px;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
   }
 
   .feedback [type="checkbox"] + label {
     padding-left: 33px;
+  }
+
+  .feedback [type="checkbox"] + label::before {
+    top: 2px;
+    left: -1px;
+  }
+
+  .feedback [type="checkbox"]:checked + label::after {
+    top: 7px;
+    left: 3px;
   }
 
   .feedback__submit button {

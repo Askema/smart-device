@@ -25,7 +25,7 @@
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $mobile-width) {
@@ -57,7 +57,7 @@
   font-family: $ff-roboto;
   color: $color-nordic;
   margin-bottom: 25px;
-  margin-top: 16px;
+  margin-top: 14px;
 
   @media (max-width: $tablet-width) {
     margin-top: 39px;
@@ -96,6 +96,7 @@
 .footer ul {
   list-style: none;
   padding: 0;
+
   @media (max-width: $mobile-width) {
     margin-bottom: 27px;
   }
@@ -135,6 +136,7 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+
   &--opened {
     @media (max-width: $mobile-width) {
       display: block;
@@ -171,4 +173,3 @@
     display: none;
   }
 }
-

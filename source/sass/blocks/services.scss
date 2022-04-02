@@ -7,7 +7,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
 
   @media (max-width: $mobile-width) {
@@ -16,15 +16,23 @@
 }
 
 .services h2 {
+  font-size: 36px;
+  line-height: 50.63px;
+  font-family: $ff-roboto;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 54px;
 
   @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 45px;
     margin-bottom: 50px;
     max-width: 613px;
   }
 
   @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39.38px;
     margin-bottom: 44px;
     padding-left: 10px;
   }
@@ -110,7 +118,7 @@
     min-height: 256px;
     max-width: none;
     flex: 1;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     overflow: hidden;
   }
 
@@ -138,6 +146,15 @@
 }
 
 .services img {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
+
+.services img:first-of-type {
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 50%;
