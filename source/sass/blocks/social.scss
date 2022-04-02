@@ -49,6 +49,7 @@
   a {
     display: flex;
     flex-direction: row;
+
     @media (max-width: $mobile-width) {
       margin-right: 14px;
     }

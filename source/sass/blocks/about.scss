@@ -14,11 +14,6 @@
   }
 }
 
-.about__wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .about h2 {
   font-size: 36px;
   line-height: 50px;
@@ -82,7 +77,7 @@
 }
 
 .about a {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: $ff-roboto;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -123,6 +118,8 @@
 }
 
 .about__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   padding-left: 195px;
   background-image: url("../img/year2005@1x.png");
   background-repeat: no-repeat;

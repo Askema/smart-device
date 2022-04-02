@@ -105,14 +105,11 @@
 
 .features svg {
   fill: $color-deep-sky-blue;
+  margin-bottom: 16px;
+
   & path {
     fill: $color-deep-sky-blue;
   }
-}
-
-.features svg {
-  fill: $color-deep-sky-blue;
-  margin-bottom: 16px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 5px;
