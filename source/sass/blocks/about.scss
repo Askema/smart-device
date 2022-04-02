@@ -1,16 +1,16 @@
 .about {
-  padding-top: 74px;
+  padding-top: 60px;
   padding-bottom: 99px;
   color: $color-dim-gray;
   z-index: 1;
 
   @media (max-width: $tablet-width) {
-    padding-top: 57px;
+    padding-top: 45px;
     padding-bottom: 72px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 31px 10px 53px 15px;
+    padding: 17px 10px 53px 15px;
   }
 }
 
@@ -47,6 +47,7 @@
   margin: 0;
   max-width: 984px;
   margin-bottom: 22px;
+  padding-left: 2px;
 
   @media (max-width: $tablet-width) {
     padding-left: 5px;
