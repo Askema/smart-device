@@ -1,0 +1,147 @@
+.services {
+  background: $color-tangaroa;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  padding-top: 88px;
+  padding-bottom: 126px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 33px;
+  }
+}
+
+.services h2 {
+  margin: 0;
+  margin-bottom: 54px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+    max-width: 613px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 44px;
+    padding-left: 10px;
+  }
+}
+
+.services__group {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
+
+.services__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 16px;
+    padding-left: 15px;
+  }
+}
+
+.services a {
+  color: $color-default-white;
+  font-size: 20px;
+  line-height: 30px;
+  flex: 1 1 300px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 370px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1b2d37;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &:active::before {
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    bottom: 2px;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-color: $color-deep-sky-blue;
+    background-position: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-height: 256px;
+    max-width: none;
+    flex: 1;
+    margin-bottom: 47px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.services span {
+  position: absolute;
+  top: 50px;
+  left: 43px;
+  z-index: 2;
+  max-width: 155px;
+
+  @media (max-width: $tablet-width) {
+    top: 39px;
+    left: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 19px;
+    left: 35px;
+  }
+}
+
+.services img {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
