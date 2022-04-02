@@ -1,0 +1,121 @@
+.social {
+  margin-right: 102px;
+  padding-top: 15px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 0 25px 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 113vw;
+      right: -25px;
+      bottom: -1px;
+      z-index: 40;
+      height: 1px;
+      background-color: rgba($color-finlandia, 0.2);
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 0;
+    padding-bottom: 20px;
+    padding-top: 16px;
+
+    &::before {
+      right: -15px;
+    }
+  }
+}
+
+.social__logo {
+  svg {
+    margin-right: 16px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $mobile-width) {
+      margin-right: 14px;
+    }
+  }
+
+  & span {
+    margin: 6px 0 0 0;
+    color: $color-nordic;
+    font-size: 25px;
+    line-height: 29.3px;
+    font-weight: 700;
+    font-family: $ff-roboto;
+    text-transform: none;
+  }
+
+  & small {
+    color: $color-regent-grey;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+  }
+}
+
+.social__logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.social ul {
+  display: flex;
+  margin-bottom: 41px;
+  margin-top: 45px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.social p {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-left: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-bottom: 9px;
+  }
+}
+
+.social li {
+  margin-right: 15px;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
