@@ -5,6 +5,10 @@
 
 .logo svg {
   margin-right: 16px;
+  @media (max-width: $tablet-width) {
+    height: 38px;
+    width: 38px;
+  }
 }
 
 .logo p {
@@ -14,14 +18,20 @@
   line-height: 29.3px;
   font-weight: 700;
   margin: 6px 0 0 0;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .logo small {
   color: $color-regent-grey;
-  font-family: "Roboto", sans-serif;
+  font-family: $ff-roboto;
   font-size: 12px;
   line-height: 14.06px;
   font-weight: 400;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .logo-text {

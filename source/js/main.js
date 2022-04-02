@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {modal} from './modules/modal';
+import {accorions} from './modules/accordions';
 
 // ---------------------------------
 
