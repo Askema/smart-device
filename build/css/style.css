@@ -1009,6 +1009,9 @@ button,
 }
 
 .modal [type="checkbox"] + label {
+  -webkit-box-ordinal-group: 11;
+  -ms-flex-order: 10;
+  order: 10;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -1053,6 +1056,9 @@ button,
 }
 
 .modal__submit button {
+  -webkit-box-ordinal-group: 10;
+  -ms-flex-order: 9;
+  order: 9;
   position: relative;
   min-width: 270px;
   display: block;

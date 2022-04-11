@@ -148,6 +148,7 @@
 }
 
 .modal [type="checkbox"] + label {
+  order: 10;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -196,6 +197,7 @@
 }
 
 .modal__submit button {
+  order: 9;
   position: relative;
   min-width: 270px;
   display: block;
