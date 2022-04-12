@@ -20,7 +20,6 @@ const openModal = function () {
   }
 
   modal.addEventListener('keydown', function (event) {
-    console.log(document.activeElement, firstFocusableEl);
     const isTabPressed = (event.key === 'Tab' || event.keyCode === KEYCODE_TAB);
 
     if (!isTabPressed) {

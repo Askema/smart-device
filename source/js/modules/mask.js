@@ -41,4 +41,3 @@ window.addEventListener('DOMContentLoaded', function () {
   input.addEventListener('focus', mask, false);
   input.addEventListener('blur', mask, false);
 });
-
