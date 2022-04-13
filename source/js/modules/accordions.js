@@ -11,13 +11,13 @@ accordions.forEach(function (accordion) {
   const list = accordion.querySelector('.footer__list');
 
   tab.addEventListener('click', function () {
-    if (tab.classList.contains('title--opened')) {
-      tab.classList.remove('title--opened');
+    if (tab.classList.contains('title-opened')) {
+      tab.classList.remove('title-opened');
     } else {
       accordionTitles.forEach(function (btn) {
-        btn.classList.remove('title--opened');
+        btn.classList.remove('title-opened');
       });
-      tab.classList.add('title--opened');
+      tab.classList.add('title-opened');
     }
 
     if (list.classList.contains('footer__list--opened')) {

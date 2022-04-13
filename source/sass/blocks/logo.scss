@@ -8,11 +8,19 @@
 }
 
 .logo svg {
+  display: none;
   margin-right: 16px;
 
   @media (max-width: $mobile-width) {
+    display: block;
     height: 38px;
     width: 38px;
+  }
+}
+
+.logo img {
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 
