@@ -26,6 +26,13 @@
   &--closed {
     display: none;
   }
+
+  // скрывает scrollbar
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  -ms-overflow-style: none;
 }
 
 .modal h2 {

@@ -13,21 +13,17 @@
   }
 
   @media (max-width: $mobile-width) {
+    margin-top: 20px;
     flex-direction: column;
     padding-left: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0;
   }
 }
 
 .development li {
   @media (max-width: $mobile-width) {
-    margin: 0 auto;
-    margin-bottom: 21px;
-  }
-
-  @media (max-width: $mobile-width) {
+    margin: 0 auto 6px;
     padding-top: 6px;
-    margin-bottom: 14px;
   }
 }
 
